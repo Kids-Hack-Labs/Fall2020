@@ -1,0 +1,36 @@
+Instructions:
+
+1. Open IDLE and create a new file. 
+2. Save it in the proper folder with the name: week_01.py
+
+3. Import the sys and pygame libraries
+
+4. Create a cleanup function.
+	This function should quit pygame and exit to the system
+
+5. Create the main function:
+5.1	initialize pygame
+5.2	set the window size using pygame.display.set_mode() and store it in a variable
+	***IMPORTANT*** -> the window must be resizable
+5.3	create a variable to store the screen's new size (use the get_size() function)
+5.4	set the window's title using pygame.display.set_caption()
+5.5	create a variable to indicate that the app is runnning. Set it to True
+
+5.6	while the app is running:
+5.6.1		for each event in the event queue (retrieve it with pygame.event.get()):
+5.6.1.1			if the event is of type pygame.QUIT:
+5.6.1.1.1			set the variable that indicates that the app is running
+				to False
+5.6.1.2			if the event is of type pygame.WINDOWRESIZE:
+5.6.1.2.1			set the new size variable to the event's size
+
+5.6.2		if the new size doesn't match the screen's current size:
+5.6.2.1			set the screen to the new size using pygame.display.set_mode()
+
+5.6.3		fill the screen with a colour of your choice
+5.6.4		swap the display buffer using pygame.display.flip()
+
+5.6.5		call the cleanup function
+
+5.7 Driver code: if the __name__ attribute of the current file is "__main__":
+5.7.1	call the main function
