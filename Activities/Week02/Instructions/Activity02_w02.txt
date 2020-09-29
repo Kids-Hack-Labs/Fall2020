@@ -1,0 +1,11 @@
+Kids Hack Labs - Senior - Fall 2020
+Week 02 Activity 1
+
+Instructions:
+
+1. Create a function that repeatedly prints text for a predetermined 
+   number of times
+
+2. Ask the user what text they wish to repeat
+
+3. Call the function with the user's text as an argument

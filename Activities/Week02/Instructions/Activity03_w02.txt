@@ -1,0 +1,11 @@
+Kids Hack Labs - Senior - Fall 2020
+Week 02 Activity 1
+
+Instructions:
+
+1. Import the random module
+
+2. Create a function that prints a random number for the user
+   until the user decides to quit it.
+
+3. Call the function created in the previous step

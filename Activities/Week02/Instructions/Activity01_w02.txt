@@ -1,0 +1,11 @@
+Kids Hack Labs - Senior - Fall 2020
+Week 02 Activity 1
+
+Instructions:
+
+1. Create a function that takes two numbers as arguments and tells the user
+   what the greater number is
+
+2. Collect 2 inputs from the user and store them in variables
+
+3. Call the function created before with both variables
