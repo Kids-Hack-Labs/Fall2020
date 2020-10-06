@@ -1,10 +1,10 @@
 Kids Hack Labs - Senior - Fall 2020
-Week 02 code
+Week 03 code
 
 Instructions:
 
 1. Open IDLE and create a new file. 
-2. Save it in the proper folder with the name: week_02.py
+2. Save it in the proper folder with the name: week_03.py
 
 3. Import the sys and pygame libraries
 
