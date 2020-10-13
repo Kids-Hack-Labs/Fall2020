@@ -1,0 +1,12 @@
+Kids Hack Labs - Senior - Fall 2020
+Week 04 Activity 1
+
+1. Navigate *YOUR OWN* Week 03 code folder and open your code
+
+2. Add comments on each of the application lifetime steps discussed in class
+	(The comments should make it explicit what is being done at each step,
+	 as well as other details, such as "module imports", "initialization",
+	 "event handling", "rendering cycle" and so on)
+
+3. Save your code *AS A DIFFERENT FILE*
+	

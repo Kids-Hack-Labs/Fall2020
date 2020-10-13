@@ -1,0 +1,22 @@
+Kids Hack Labs - Senior - Fall 2020
+Week 04 Activity 2
+
+1. Create a class called Animal
+1.1	Define an initializer.
+    This initializer should take three strings and a number, representing the
+    animal's type (such as dog or cat), its name, number of legs it has,
+    and what sound it makes
+1.1.1 Set the animal's attributes accoring to the values passed in the
+      initializer. (Hint: use the self keyword)
+1.2 Define a walk function.
+    For the number of legs that the animal has, it should print the string
+    "step". For instance, a dog's walk would print "step" "step" "step" "step",
+    whereas a duck would print "step" "step"
+1.3 Define a make_sound function.
+    This function should output the string that stores the animal's sound.
+1.4 Define a get_name function.
+    This function should print the animal's name in the format: 
+    "The animal's name is " followed by the animal's name.
+    
+2. Create three different animals with different attributes and call their
+    functions (walk(), make_sound() and get_name())
