@@ -44,3 +44,7 @@ CHALLENGE 2: Expand the grid
     In the second coding area:
     Modify the for loop so that it accounts for the screen
     size when drawing rectangles
+CHALLENGE 3: Use different shapes
+    In the first coding area:
+    Instead of creating rectangles, draw circles on the
+    surface and blit it onto the screen
