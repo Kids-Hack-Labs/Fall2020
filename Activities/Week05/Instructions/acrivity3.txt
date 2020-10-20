@@ -1,0 +1,41 @@
+Kids Hack Labs - Senior - Fall 2020
+Week 05 code
+Activity 3
+
+Instructions:
+
+01. Open IDLE and CREATE A NEW FILE named surf.py
+
+02. Import the pygame library (no sys needed this time)
+02.1. Optional: "convenience import" Surface and Color
+
+03. Create an application main entry point
+
+04. Initialize pygame
+
+05. Create a Surface with a size of 256x256 pixels
+05.0 (Optional) Store a (non-black) colour in a variable
+
+06. Fill the Surface with a colour of your choosing.
+    If you stored a colour in a variable in the previous
+    step, use it to fill your Surface.
+    note: DO NOT USE BLACK as a fill colour!
+
+07. Using pygame.image.save, save the file as with
+    the name "surf.jpg"
+
+08. Using the pygame.draw.circle() function, draw a circle
+    in the middle of the surface. The circle's colour 
+    should be different than the surface's colour
+    Optional: use the ~ operator on the colour variable
+    to draw a circle with the complementary colour
+    
+09. Save the surface again; this time, with the name
+    "circle.png"
+    
+10. Create the driver code, which should run your main
+    function if the module is run
+    
+11. Run the module. Open your file explorer, navigate 
+    to where your code is. Check for the two newly 
+    created files

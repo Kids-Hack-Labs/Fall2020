@@ -1,0 +1,46 @@
+Kids Hack Labs - Senior - Fall 2020
+Week 05 code
+Activity 4
+
+Instructions:
+
+01. Open base_file.py in IDLE
+
+Note: Convenience imports were already made, and coding
+      areas are already marked in the file. To avoid
+      bugs, do not touch code outside the designated
+      coding areas.
+        
+02. In the first coding area:
+02.1 Store a colour for the background in a variable
+02.2 Create a surface with a size of 100x100 pixels and
+     store it in a variable
+02.3 Store the surface's rectangle information in a
+     variable
+02.4 Store a second colour for the rectangle in a
+     variable
+
+03. In the second coding area:
+03.1 Fill the screen with the background colour created
+     in step 2.1
+03.2 Fill the shape with the colour created in step 02.4
+03.3 Using nested for loops, draw a checkerboard pattern
+     on the screen. It should have 6x6 squares, based
+     on the size of the square create in step 02.2 and
+     the screen size.
+     HINT: Use the counter variables in the for loop to
+           position the rectangle correctly on the screen
+           before blitting it to the screen
+
+CHALLENGES:
+The code creates a resizable window, but the rectangles
+do not change sizes. From here, two challenges are 
+proposed:
+CHALLENGE 1: Resize the rectangles
+    In the challenge area:
+    Resize the rectangles when the screen is resized, so
+    that there is always a 6x6 checkerboard on the screen
+CHALLENGE 2: Expand the grid
+    In the second coding area:
+    Modify the for loop so that it accounts for the screen
+    size when drawing rectangles

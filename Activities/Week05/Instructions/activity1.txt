@@ -1,0 +1,27 @@
+Kids Hack Labs - Senior - Fall 2020
+Week 05 code
+Activity 1
+
+Instructions:
+
+01. Open IDLE. DO NOT create a new file. (this activity
+    will only use the shell)
+
+02. Import the pygame module into the shell
+
+03. Create a colour of your choosing and store it in a 
+    variable
+
+04. Print the colour to the screen
+
+05. Print the hsva values of your colour
+
+06. Print the cmy values of your colour
+
+07. Create a second colour and store it in a variable
+
+08. Print the result of adding the two colours
+
+09. Print the result of subtracting the two colours
+
+10. Print the red value of the second colour

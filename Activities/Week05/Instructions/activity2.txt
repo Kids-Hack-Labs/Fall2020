@@ -1,0 +1,44 @@
+Kids Hack Labs - Senior - Fall 2020
+Week 05 code
+Activity 2
+
+Instructions:
+
+01. Open IDLE. DO NOT create a new file. (this activity
+    will only use the shell). If you kept the shell open
+    from the last activity, ignore this step
+
+02. Import the pygame module into the shell. If you kept
+    the shell open from the last activity, ignore this step
+
+03. Create a Rect and store it in a variable
+03.1 Print the variable to the screen
+
+04. Print the size of the Rect to the screen
+
+05. Print the center of the Rect to the screen
+
+06. Change the left attribute of the Rect. This can be
+    done either through assignment or a mathematical
+    operation of your choosing
+
+07. Print the size of the Rect to the screen. Have there
+    been any changes compared to step 04?
+
+08. Print the center of the Rect to the screen. Have there
+    been any changes compared to step 05?
+
+09. Create a second Rect and store it in another variable
+
+10. Using the colliderect() function, check whether the
+    two rects collide. What is the result?
+
+11. Use the clip() function and store the result in a variable
+11.1 Print the variable to the screen
+
+12. Create a tuple with two values and store it in a variable
+
+13. Using any of the three previously created rectangles,
+    print the result of a collidepoint() test to the screen.
+    Hint: use the tuple created before as the argument of
+    collidepoint()
