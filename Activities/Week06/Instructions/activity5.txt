@@ -1,0 +1,29 @@
+Kids Hack Labs - Senior - Fall 2020
+Week 06 Activity 4
+
+***Using the project folder structure created in Activity 1***
+
+1. Navigate to the src folder and create the intro_screen.py file
+
+=> Inside the intro_screen.py file:
+2. Import the pygame module
+   Optional: Convenience import the Color, Rect and Surface classes
+   from pygame
+
+2. Create the IntroScreen class:
+2.1. Define an initializer:
+2.1.1. Create a size attribute and assign it the result of a call to
+       pygame.display.get_surface().get_size()
+2.1.2. Create a bg_colour attribute
+
+2.2. Define an update method:
+2.2.1. For now, our method will be empty-bodied. Remember to use the
+       pass keyword
+       
+2.3. Define a render method:
+2.3.1. For now, the method will simply fill the screen with the 
+       bg_colour attribute. Use pygame.display.get_surface().blit()
+       to achieve it.
+
+2.4. Define a resize method. It should take a size as an argument:
+2.4.1. Set the size attribute to the new size passed to the function

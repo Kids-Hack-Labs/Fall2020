@@ -1,0 +1,34 @@
+Kids Hack Labs - Senior - Fall 2020
+Week 06 Activity 3
+
+***Using the project folder structure created in Activity 1***
+
+1. Navigate to the engine folder and open the game_env.py file
+
+=>Inside the game_env.py file:
+=>Inside the Game class:
+
+2. Define a process_events() method for the class
+2.1. For every event in the event queue *retrieve it with pygame.event.get()*
+2.1.1. If the event's type is pygame.QUIT:
+2.1.1.1. Set te is_running attribute to False
+(OPTIONAL steps if you made the window resizable)
+2.1.2. If the event's type is pygame.VIDEORESIZE:
+2.1.2.1. Set the screen_size attibute to the event's size
+(End of optional part)
+
+3. Define an update method for the class
+3.1. The method should first check if the screen was resized.
+3.1.1. If it was, the screen_surf attribute should be reassigned the value of
+       pygame.display.set_mode() call, taking the screen_size attribute as
+       an argument.
+       (OPTIONAL: If you made the screen resizable in the previous activity,
+        remember to make it resizable again)
+3.1.2. Also considering that the screen may have been resized, call the 
+       resize() method in our game_screen attribute, with screen_size as a
+       parameter
+3.2. Lastly, the method should call update() on the game_screen attribute
+
+4. Define a render() method for the class:
+4.1. This method should call the render method in our game_screen attribute
+4.2. It should also call pygame.display.flip(), to finish the rendering cycle

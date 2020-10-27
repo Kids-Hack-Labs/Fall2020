@@ -1,0 +1,21 @@
+Kids Hack Labs - Senior - Fall 2020
+Week 06 Activity 1
+
+1. Create a project folder structure:
+- Name your project folder following conventions.
+- Inside your project folder, create the engine and src folders
+
+=>At the root of the project folder structure
+2. Create the main app file (should be named app.py)
+
+=>Inside the app.py file:
+3. From the engine folder's game_env module, import the Game class
+
+4. Define an application main entry point
+4.1. Create an object of the Game class
+4.2. Call the run() method of the object
+
+
+5. Create the driver code:
+   If the __name__ attribute of the module is the string __main__:
+       call the main function

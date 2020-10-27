@@ -1,0 +1,25 @@
+***THIS IS AN EXAMPLE SAVED FROM THE SHELL***
+
+Python 3.8.2 (tags/v3.8.2:7b3ab59, Feb 25 2020, 23:03:10) [MSC v.1916 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license()" for more information.
+>>> 
+= RESTART: C:\Fall2020\Activities\Week05\Code\act3.py
+>>> import pygame
+pygame 1.9.6
+Hello from the pygame community. https://www.pygame.org/contribute.html
+>>> from pygame import Color
+>>> ex_colour = Color(25, 50, 150)
+>>> print(ex_colour)
+(25, 50, 150, 255)
+>>> print(ex_colour.hsva)
+(228.0, 83.33333333333334, 58.82352941176471, 100.0)
+>>> print(ex_colour.cmy)
+(0.9019607843137255, 0.803921568627451, 0.4117647058823529)
+>>> second_colour = Color(170, 12, 47)
+>>> print(ex_colour + second_colour)
+(195, 62, 197, 255)
+>>> print(ex_colour - second_colour)
+(0, 38, 103, 0)
+>>> print(second_colour.r)
+170
+>>> 

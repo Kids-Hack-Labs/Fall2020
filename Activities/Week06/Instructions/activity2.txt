@@ -1,0 +1,34 @@
+Kids Hack Labs - Senior - Fall 2020
+Week 06 Activity 2
+
+***Using the project folder structure created in Activity 1***
+
+1. Navigate to the engine folder and create the game_env.py file
+
+=>Inside the game_env.py file:
+import the sys and pygame modules
+from the pygame.time submodule, import the Clock class
+from the source folder's intro_screen module, import the IntroScreen class
+
+2. Create an FPS value and assign 30 to it
+
+3. Create the Game class:
+3.1. Define the class's initializer:
+3.1.01. Create a screen_size attribute as a tuple with the values 450 x 600
+        (Yes, it is a taller-than-wider screen)
+3.2.02. Create a title attribute. Name it after your game's title, but keep
+        it family-friedly.
+3.2.03. Create a clock attribute and assign a Clock object to it
+3.2.04. Create a delta attribute and set it to zero
+3.2.05. Create a time_since_started attribute and set it to zero
+3.2.06. Call pygame's init function
+3.2.07. Set the previously create time_since_started attribute to 
+        pygame.time.get_ticks()
+3.2.08. Create a screen_surf attribute and assign it the return value of
+        pygame.display.set_mode(), using the the class's screen_size as an 
+        argument.
+        (OPTIONAL: Make the screen resizable)
+3.2.09. Set the screen's title with pygame.display.set_caption(), using the
+        title attribute as an argument
+3.2.10. Create a game_screen attribute and assign it an IntroScreen object
+3.2.11. Create an is_running attribute and set it to True
