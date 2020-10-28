@@ -1,0 +1,65 @@
+Kids Hack Labs - Senior - Fall 2020
+Week 06 code
+Homework
+
+Instructions:
+
+01. Copy over the whole Week 06 folder structure and files into a separate 
+    directory.
+
+02. Navigate to the src folder and open the intro_screen.py file
+
+03. In the IntroScreen class's initializer, add an 50x50 pixel Surface.
+    When you create the Surface, use pygame.SRCALPHA as the second argument
+    in the surface's initializer.
+
+    REMINDER:
+	To create a pygame Surface, make sure you imported the Surface class
+	from the pygame module, using the expression:
+		from pygame import Surface
+	somewhere in the beginning of your code
+
+    NOTE:
+	The syntax to create a Surface is
+	    Surface(size, flags)
+	where size must be a tuple with two values and flags is a pygame 
+	constant. While flags can be omitted, we need to use pygame.SRCALPHA
+	for this activity
+
+04. Fill the newly created Surface with the Color(0, 0, 0, 0).
+    We need the surface's base colour to be transparent for this activity.
+
+05. Create a variable to store the Surface's Rect.
+    HINT:
+	Use the Surface's get_rect() function. If in doubt, check the code
+	from Week 05.
+
+06. Draw a circle with a colour of your choosing on the Surface. The circle
+    should be centered on the surface and have a radius of 25 pixels.
+    HINT:
+	Use Week 05 code as a reminder on how to draw shapes onto a Surface
+
+07. Center the Rect created in step 05 on the screen. You can do this by
+    using the self.size attribute and the rect's center attribute.
+
+08. In the IntroScreen's render() method:
+    Modify the code to store the game's display surface in a temporary
+    variable.
+    REMINDER:
+	The game's display surface can be obtained using
+	    pygame.display.get_surface()
+    After filling the temporary surface with a colour of your choosing,
+    blit the surface with the circle on the temporary variable.
+
+09. Save your code, then open and run the app.py file.
+    You should see a circle in the middle of the screen
+
+CHALLENGE:
+    If you made your screen resizable during class:
+    Make it so that the circle is always in the center of the screen. The 
+    size of the circle should also always be 1/9th of the screen's width.
+    NOTE:
+	This size was originally calculated based on the initial sizes of
+	the project. Since the screen's initial width is 450 pixels, a 
+	circle with a diameter of 50 represents 50/450ths; that is, 1/9th
+	of the screen

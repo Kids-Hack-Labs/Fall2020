@@ -12,7 +12,7 @@ Week 06 Activity 3
 2.1. For every event in the event queue *retrieve it with pygame.event.get()*
 2.1.1. If the event's type is pygame.QUIT:
 2.1.1.1. Set te is_running attribute to False
-(OPTIONAL steps if you made the window resizable)
+(OPTIONAL steps if you made the window resizable in the previous activity)
 2.1.2. If the event's type is pygame.VIDEORESIZE:
 2.1.2.1. Set the screen_size attibute to the event's size
 (End of optional part)

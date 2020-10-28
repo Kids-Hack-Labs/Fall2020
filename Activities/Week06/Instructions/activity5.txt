@@ -1,5 +1,5 @@
 Kids Hack Labs - Senior - Fall 2020
-Week 06 Activity 4
+Week 06 Activity 5
 
 ***Using the project folder structure created in Activity 1***
 
@@ -14,7 +14,8 @@ Week 06 Activity 4
 2.1. Define an initializer:
 2.1.1. Create a size attribute and assign it the result of a call to
        pygame.display.get_surface().get_size()
-2.1.2. Create a bg_colour attribute
+2.1.2. Create a bg_colour attribute and set it to a colour of your
+       choosing.
 
 2.2. Define an update method:
 2.2.1. For now, our method will be empty-bodied. Remember to use the
@@ -22,7 +23,7 @@ Week 06 Activity 4
        
 2.3. Define a render method:
 2.3.1. For now, the method will simply fill the screen with the 
-       bg_colour attribute. Use pygame.display.get_surface().blit()
+       bg_colour attribute. Use pygame.display.get_surface().fill()
        to achieve it.
 
 2.4. Define a resize method. It should take a size as an argument:

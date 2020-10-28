@@ -18,11 +18,13 @@ from the source folder's intro_screen module, import the IntroScreen class
         (Yes, it is a taller-than-wider screen)
 3.2.02. Create a title attribute. Name it after your game's title, but keep
         it family-friedly.
-3.2.03. Create a clock attribute and assign a Clock object to it
+3.2.03. Create a clock attribute and assign a Clock object to it.
+	*Do not forget the brackets after Clock, otherwise you will get
+	errors further down in the code*
 3.2.04. Create a delta attribute and set it to zero
 3.2.05. Create a time_since_started attribute and set it to zero
 3.2.06. Call pygame's init function
-3.2.07. Set the previously create time_since_started attribute to 
+3.2.07. Set the previously created time_since_started attribute to 
         pygame.time.get_ticks()
 3.2.08. Create a screen_surf attribute and assign it the return value of
         pygame.display.set_mode(), using the the class's screen_size as an 

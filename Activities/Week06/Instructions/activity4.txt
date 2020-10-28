@@ -18,8 +18,10 @@ Week 06 Activity 4
        method of the clock attribute, using FPS as an argument
 2.1.5. Set the time_since_started attribute to the result of a call
        to pygame.time.get_ticks()
-2.2. Call the cleanup() method. Notice that this, if this code is
-     inside the while loop, your game will run only once.
+2.2. Call the cleanup() method. Notice that this line should be
+     unindented; if this code is inside the while loop, your game 
+     will only run for a single frame (meaning it will last for about
+     33 milliseconds).
 
 3. Define a cleanup() method for the class:
 3.1. This method should call pygame.quit() and sys.exit()
