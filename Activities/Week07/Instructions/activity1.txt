@@ -1,0 +1,24 @@
+Kids Hack Labs - Senior - Fall 2020
+Week 07 Activity 1
+
+1. Copy the folder structure from Week 06 into Week 07
+1.1. Navigate to the engine folder and open the game_env.py file
+
+=>Inside the game_env.py file:
+2. At the end of the initializer, but before the line that sets 
+   self.is_running to True:
+2.1. Create a keys attribute and assign it an empty tuple
+2.2. Create a mouse_buttons attribute and assign it an empty tuple
+2.3. Create a mouse_prev attribute and assign it an empty tuple
+2.4. Create a mouse_pos attribute and assign it an empty tuple
+
+3. At the end of the process_events() function:
+3.1. Check for key up OR down events. If there is an event of this
+     type:
+3.1.1. Assign the result of pygame.key.get_pressed() to the keys 
+       attribute
+3.2. Check for mouse button up OR down events. If there is an event of 
+     this type:
+#####################################TODO##############################
+=> Buttons, motion, etc
+3.2.1. Assign the buttons of 
