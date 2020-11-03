@@ -1,24 +1,76 @@
 Kids Hack Labs - Senior - Fall 2020
 Week 07 Activity 1
 
-1. Copy the folder structure from Week 06 into Week 07
-1.1. Navigate to the engine folder and open the game_env.py file
+01. Copy the folder structure from Week 06 into Week 07
+01.1. Navigate to the engine folder and open the game_env.py file
 
 =>Inside the game_env.py file:
-2. At the end of the initializer, but before the line that sets 
-   self.is_running to True:
-2.1. Create a keys attribute and assign it an empty tuple
-2.2. Create a mouse_buttons attribute and assign it an empty tuple
-2.3. Create a mouse_prev attribute and assign it an empty tuple
-2.4. Create a mouse_pos attribute and assign it an empty tuple
+02. Between the class declaration and the initializer definition:
+02.1. Create a level static attribute and assign None to it
+02.2. Create a screen_surf static attribute and assign None to it
 
-3. At the end of the process_events() function:
-3.1. Check for key up OR down events. If there is an event of this
-     type:
-3.1.1. Assign the result of pygame.key.get_pressed() to the keys 
-       attribute
-3.2. Check for mouse button up OR down events. If there is an event of 
-     this type:
-#####################################TODO##############################
-=> Buttons, motion, etc
-3.2.1. Assign the buttons of 
+03. Inside the initializer:
+03.1. Change the line that says 
+
+      self.screen_surf = pygame.display.set_mode(\
+                             self.screen_size, pygame.RESIZABLE)
+   
+      into:
+    
+      Game.screen_surf = pygame.display.set_mode(\
+                             self.screen_size, pygame.RESIZABLE)
+                             
+
+03.2. Change the line that says
+
+       self.game_screen = IntroScreen()
+     
+       into:
+     
+       Game.set_level(IntroScreen())
+    
+04. In the update function:
+04.1. Change the if statement to use Game.screen_surf.get_size() as
+      the right side of the equality comparison operator
+04.1.1. Change self.screen_surf into Game.screen_surf inside the if
+        statement body
+04.1.2. Change self.game_screen into Game.level inside the if
+        statement body
+04.2. Change self.game_screen.update() into Game.level.update()
+
+05. Inside the render function:
+05.1. Change self.game_screen.render into Game.level.render()
+
+=> At the very end of the file
+   NOTE: the added functions are supposed to be static, and should not
+         have the keyword "self" appear anywhere. If you try to put an
+         object-specific variable (that is, variables that begin with
+         "self.", your code will break
+         
+06. Add a static function (remember to use the @staticmethod decorator)
+    named get_surface()
+06.1. It should return the Game's screen_surf static attribute
+
+07. Add a second static function named set_level(). It should take a
+    level object as an argument
+07.1. Set the Game's level to the level received as an argument
+
+=> Inside the intro_screen.py file in the source folder:
+08. Erase the "import pygame" statement from the beginning of the code
+
+09. Modify the initializer to receive a second argument named size_.
+    size_ is expected to be a tuple, containing the screen's width and
+    height.
+    OPTIONAL: Make it so that size_ is a default argument, set to (0, 0)
+09.1. Assign the size_ argument to the size attribute
+   
+10. Modify the render function:
+10.1. Create a local import of the Game class from the engine's game_env
+      file
+10.2. Change the line that says
+     
+        pygame.display.get_surface().fill(self.bg)
+        
+     into:
+        
+        Game.get_surface().fill(self.bg)

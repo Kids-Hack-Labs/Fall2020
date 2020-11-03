@@ -1,0 +1,37 @@
+Kids Hack Labs - Senior - Fall 2020
+Week 07 Activity 2
+
+=>Inside the game_env.py file:
+01. Between the class declaration and the initializer definition:
+01.1. Create a keys static attribute and assign an empty tuple to it
+01.2. Create a mouse_buttons static attribute and assign an empty tuple 
+      to it
+01.1. Create a mouse_prev attribute and assign an empty tuple to it
+01.2. Create a mouse_pos static attribute and assign an empty tuple 
+      to it
+
+02. In the Game's initializer
+    (After setting the screen, before setting self.is_running to True)
+02.1. Set Game.keys to pygame.key.get_pressed()
+02.2. Set Game.mouse_buttons to pygame.mouse.get_pressed()
+02.3. Set Game.mouse_prev and Game.mouse_pos to pygame.mouse.get_pos()
+
+03. In the process_events() method, include the following checks inside
+    the for loop:
+03.1. If the event's type is KEYDOWN or KEYUP:
+03.1.1. Set Game.keys to pygame.key.get_pressed()
+03.2. If the event's type is MOUSEBUTTONDOWN or MOUSEBUTTONUP:
+03.2.1. Set Game.mouse_buttons to pygame.mouse.get_pressed()
+03.2.2. Set Game.mouse_prev to Game.mouse_pos
+03.2.3. Set Game.mouse_pos to pygame.mouse.get_pos()
+03.3. If the event's type is MOUSEMOTION:
+03.3.1. Set Game.mouse_prev to Game.mouse_pos
+03.3.2. Set Game.mouse_pos to pygame.mouse.get_pos()
+
+04. Create the necessary static methods to get the input variables:
+04.1. get_keys() should return Game's static keys attribute
+04.2. get_key(key) is a convenience method to return Game's keys[key]
+04.3. get_mouse_button() should return Game's static mouse_buttons
+      attribute
+04.4. get_mouse_prev() should return Game's static mouse_prev attribute
+04.5. get_mouse_pos() should return Game's static mouse_pos attribute

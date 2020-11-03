@@ -1,0 +1,31 @@
+Kids Hack Labs - Senior - Fall 2020
+Week 07 Activity 3
+
+=>Inside the intro_screen.py file:
+00. Import all pygame's local constants
+
+01. In the class's initializer:
+01.1. Create a tuple attribute to store the new surface's size
+01.2. Create a ball_colour attribute to store the ball's colour
+01.3. Create a ball_surf attribute to store a new Surface, which has
+      to be created with the previously created size and the SRCALPHA
+      flag set
+01.4. Get the ball_surf attribute's rect and store it in a variable
+01.5. Import pygame
+01.6. Using the pygame.draw submodule, draw a circle to the center of
+      the newly created surface. The attributes needed were set up in
+      steps 01.1. through 01.3
+      
+02. In the update method:
+02.1. Erase the "pass" keyword
+02.2. Import the Game class from the engine's folder game_env module
+02.3. Set the center of the ball_surf's rect to the Game's mouse_pos
+      HINT: Use Game's static method get_mouse_pos(), created in the
+            previous activity.
+
+03. In the render method:
+03.1. Erase the call to pygame.display.get_surface().fill()
+03.2. Createe a temporary variable and set it to the Game's static 
+      get_surface() method
+03.3. Fill the temporary surface with the background colour
+03.4. Blit the ball's surface to the temporary variable
