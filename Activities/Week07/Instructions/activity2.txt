@@ -28,10 +28,11 @@ Week 07 Activity 2
 03.3.1. Set Game.mouse_prev to Game.mouse_pos
 03.3.2. Set Game.mouse_pos to pygame.mouse.get_pos()
 
-04. Create the necessary static methods to get the input variables:
-04.1. get_keys() should return Game's static keys attribute
-04.2. get_key(key) is a convenience method to return Game's keys[key]
-04.3. get_mouse_button() should return Game's static mouse_buttons
-      attribute
-04.4. get_mouse_prev() should return Game's static mouse_prev attribute
-04.5. get_mouse_pos() should return Game's static mouse_pos attribute
+=> At the end of the file, create the necessary static methods to get
+   the input variables:
+05. get_keys() should return Game's static keys attribute
+06. get_key(key) is a convenience method to return Game's keys[key]
+07. get_mouse_buttons() should return Game's static mouse_buttons
+    attribute
+08. get_mouse_prev() should return Game's static mouse_prev attribute
+09. get_mouse_pos() should return Game's static mouse_pos attribute

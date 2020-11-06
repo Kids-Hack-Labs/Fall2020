@@ -14,7 +14,7 @@ Week 07 Activity 3
 01.5. Import pygame
 01.6. Using the pygame.draw submodule, draw a circle to the center of
       the newly created surface. The attributes needed were set up in
-      steps 01.1. through 01.3
+      steps 01.1. through 01.3.
       
 02. In the update method:
 02.1. Erase the "pass" keyword
@@ -24,8 +24,8 @@ Week 07 Activity 3
             previous activity.
 
 03. In the render method:
-03.1. Erase the call to pygame.display.get_surface().fill()
-03.2. Createe a temporary variable and set it to the Game's static 
-      get_surface() method
+03.1. Erase the call to Game.get_surface().fill()
+03.2. Create a temporary variable and assign it the return value of 
+      Game's static get_surface() method
 03.3. Fill the temporary surface with the background colour
 03.4. Blit the ball's surface to the temporary variable

@@ -31,7 +31,7 @@ Week 07 Activity 1
     
 04. In the update function:
 04.1. Change the if statement to use Game.screen_surf.get_size() as
-      the right side of the equality comparison operator
+      the right side of the inequality comparison operator
 04.1.1. Change self.screen_surf into Game.screen_surf inside the if
         statement body
 04.1.2. Change self.game_screen into Game.level inside the if
@@ -42,13 +42,14 @@ Week 07 Activity 1
 05.1. Change self.game_screen.render into Game.level.render()
 
 => At the very end of the file
-   NOTE: the added functions are supposed to be static, and should not
-         have the keyword "self" appear anywhere. If you try to put an
-         object-specific variable (that is, variables that begin with
-         "self.", your code will break
+   NOTE: The functions we're about to add are supposed to be static, 
+         and should not have the keyword "self" appear anywhere. If you
+         try to put an object-specific variable (that is, variables 
+         that begin with "self.", your code will break
          
-06. Add a static function (remember to use the @staticmethod decorator)
-    named get_surface()
+06. Add a static function named get_surface()
+    (remember to use the @staticmethod decorator before the function
+     definition)
 06.1. It should return the Game's screen_surf static attribute
 
 07. Add a second static function named set_level(). It should take a
