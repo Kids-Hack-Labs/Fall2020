@@ -1,0 +1,60 @@
+Kids Hack Labs - Senior - Fall 2020
+Week 08 Activity 1
+
+01. Copy the folder structure from Week 07 into Week 08
+01.1. Navigate to the engine folder and open the game_env.py file
+
+=>Inside the game_env.py file:
+02. Change the update() function definition to take delta_ms as an 
+    argument.
+02.1. At the end of the function, pass delta_ms to the Game.level's 
+      update() method
+
+03. Locate the Game's run() method. Inside it, pass self.delta as a 
+    parameter to the game's update() method
+    
+=> Navigate to the intro_screen.py file
+04. Change the update() function definition to take delta_ms as an 
+    argument.
+
+=> In the src folder, create a ball.py file. In this file:
+05. Import the Color, Rect and Surface classes from pygame
+
+06. Create a Ball class. Inside its initializer:
+06.1. Create a series of attributes for the ball: radius, size, colour, 
+      surf, rect and vel
+            
+      Remember to use the self keyword and make sure all the types
+      match their use (ex: ball_radius is expected to be an integer,
+      ball_size is supposed to be a tuple, and so on). Also, we will
+      need to import pygame's draw module to be able to draw a circle
+      onto the surface
+      
+      NOTE: If you do not remember how to use these attributes, Week 05 
+      has pointers on what we are going to do
+      
+      OPTIONAL: Use colorkeys instead of alpha values for the surface.
+                This technique makes the surface quicker to blit
+      
+07. Create an update() method that takes delta_ms as an argument:
+07.1. Move the ball by adding its (velocity * delta_ms) to its position
+
+08. Create a render() method:
+08.1. Import the Game class from the engine's game_env module
+08.2. Get the game's surface and blit the ball to the screen
+
+=> Go back to the intro_screen.py file.
+09. At the beginning of the file (after the pygame imports), 
+    import the Ball class from the soruce's ball module
+
+10. In the IntroScreen's initializer:
+10.1 Create a Ball-type attribute 
+     (NOTE: Remember to use the self keyword)
+
+11. In the IntroScreen's update() method:
+11.1. Call the update() function on the ball attribute. Remember to 
+      pass the delta_ms parameter to the ball.
+
+12. In the IntroScreen's render() mehtod:
+12.1. Call the render() function on the ball attribute. Do it after 
+      filling the screen 

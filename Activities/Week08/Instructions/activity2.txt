@@ -1,0 +1,32 @@
+Kids Hack Labs - Senior - Fall 2020
+Week 08 Activity 2
+
+=> In the src folder, create a paddle.py file
+
+01. In the beginning of the file, import everything from pygame's locals, 
+    as well as pygame's Color, Rect and Surface classes
+
+02. Create a Paddle class. In its initializer:
+02.1. Create a series of attributes for the paddle. Unlike the ball,
+      we can get by with just a rect, a surf, a colour, and an x_vel
+      attributes
+      
+      Suggestion:
+      Create the rect first, and use the rect's size to create the 
+      surface. Fill the surface with a colour, and set the rect's y 
+      position (since the paddle shouldn't move vertically)
+
+03. Create an update() method that takes delta_ms as an argument
+03.1. Import the Game class from the engine folder's game_env module
+03.2. Create left and right temporary variables to store the key presses
+      to the left and the right
+      
+03.3. If the left key is pressed, subtract the rect's current centerx 
+      position by x_vel * delta_ms. Remember to cast this into an integer
+
+03.4. If the right key is pressed, add the rect's current centerx 
+      position by x_vel * delta_ms. Remember to cast this into an integer
+      
+04. In the render() function:
+04.1. Import the Game class from the engine's game_env module
+04.2. Blit the paddle to the game's surface
