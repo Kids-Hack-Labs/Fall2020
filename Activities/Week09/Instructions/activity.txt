@@ -77,4 +77,16 @@ In the src folder, open the intro_screen.py file:
                 otherwise:
                     set the ball's left to the overlap's right plus one
                     
+        else:
+            if the ball's center is to the left of the overlap's:
+                set the ball's right to the overlap's left minus one
+            otherwise:
+                set the ball's left to the overlap's right plus one
+            if the ball's center is above the overlap's:
+                set the ball's bottom to the overlap's top minus one
+            otherwise:
+                set the ball's top to the PADDLE's bottom plus one
+            flip the velocities in BOTH axes (that is, multiply both
+            by minus one)
+                    
 06. Call the paddle_bounce() method in the class's update() method
