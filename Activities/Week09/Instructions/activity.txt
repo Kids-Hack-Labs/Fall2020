@@ -1,0 +1,80 @@
+Kids Hack Labs - Senior - Fall 2020
+Activity
+
+NOTE: As this is an exercise about AABB collision, we will be using
+      the ball's and paddle's Rects extensively. Bear that in mind as
+      you read through these instructions!
+
+Copy the Week 08 folder structure over to Week 09
+
+In the src folder, open the intro_screen.py file:
+
+01. Create a bound_ball() method. It will be in charge of adjusting
+    the ball's position and flipping the appropriate component of the
+    velocity, creating a "bouncing" effect. In other words:
+    
+    if the ball goes beyond the left side of the screen:
+        the ball's left side should be assigned a value of zero
+        the ball's velocity on the x-axis should be multiplied by -1
+    if the ball goes beyond the right side of the screen:
+        the ball's right side should be assigned the value of the 
+        screen's right side
+        the ball's velocity in the x-axis should be multiplied by -1
+    if the ball goes beyond the top of the screen:
+        the ball's top side should be assigned a value of zero
+        the ball's velocity on the y-axis should be multiplied by -1
+    if the ball goes beyond the bottom of the screen:
+        the ball's bottom side should be assigned the value of the
+        screen's bottom side
+        the ball's velocity on the y-axis should be multiplied by -1
+
+02. Call the bound_ball() method in the class's update() method
+
+03. Create a bind_paddle() method. It will be in charge of limiting
+    the paddle's movement to inside the screen. In other words:
+    
+    if the paddle's left side is beyond the left side of the screen:
+        the paddle's left side should be assigned the value of zero
+    if the paddle's right side is beyond the right side of the screen:
+        the paddle's right side should be assigned the value of the
+        screen's width
+        
+04. Call the bind_paddle() method inside the class's update() mehtod
+
+05. Create a paddle_bounce() method. This function will manage the 
+    collision between the paddle and the ball:
+    
+    Create a variable named tolerance and assign it the value of 0.2929
+    
+    Create an overlap variable and assign it the result of a clipping 
+    between the ball's and the paddle's rects.
+    
+    If there is an overlap:
+        If the overlap's width is less than its height (we have a
+        sideways collision):
+            if the ball's center is to the left of the overlap's:
+                set the ball's right to the overlap's left minus one
+            otherwise:
+                set the ball's left to the overlap's right plus one
+            multiply the ball's horizontal velocity by -1
+            
+            If the overlap's height is less than the ball's height 
+            times the tolerance variable:
+                if the ball's center is above the overlap's center:
+                    set the ball's bottom to the overlap's top minus
+                    one
+                    multiply the ball's vertical velocity by one
+        
+        else if the overlap's width greater than its height:
+            set the ball's bottom to the overlap-'s top minus one
+            multiply the ball's vertical velocity by -1
+            
+            if the overlap's width is less than the ball's width times
+            the tolerance factor:
+                if the ball's center is to the left of the overlap's:
+                    set the ball's right to the overlap's left minus 
+                    one
+                otherwise:
+                    set the ball's left to the overlap's right plus one
+                    
+06. Call the paddle_bounce() method in the class's update() method

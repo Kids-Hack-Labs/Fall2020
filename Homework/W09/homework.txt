@@ -1,0 +1,25 @@
+Kids Hack Labs - Senior - Fall 2020
+Week 09 Homework
+
+These instructions are going to be very generic on purpose.
+
+This is intended as research, code analysis, and porting code practice.
+
+Directions:
+
+Research the website below to learn other types of collision detection.
+
+http://www.jeffreythompson.org/collision-detection/
+
+NOTE: As you will note, the website provided contains JavaScript code.
+      You will not be able to simply copy-and-paste the code into your
+      project. You are expected to analyse the code and port it to
+      Python using the logic contained in the website.
+
+Copy the Week 09 code folder structure into a separate folder.
+
+In the src folder, open the intro_screen.py file.
+
+Change the paddle_bounce function to use rectangle-circle collision.
+The website provided should provide enough ideas for you to perform
+the conversion.
