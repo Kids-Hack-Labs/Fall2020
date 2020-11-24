@@ -1,0 +1,47 @@
+Kids Hack Labs - Senior - Fall 2020
+Activity 2
+
+Implementing Bricks
+
+01. In the src folder, open the intro_screen file
+
+The IntroScreen's initializer will be tasked with creating a l
+
+In the IntroScreen's initializer:
+    
+    Create a temporary variable named brick_size. This variable should
+    be a tuple (that is, numbers between round brackets) with two
+    values: 50 and 25
+    
+    Create a temporary variable named brick_colour and assign it a
+    Color() of your preference
+    
+    Create a bricks attribute, assigning an empty list to it
+    
+    Create a for loop where a counter variable x is ranged between 6
+    and the screen's width minus the width of a brick (that is,
+    brick_size[0]), and with a step of a brick's width plus 5:
+        Create a for loop where a counter variable y is ranged between
+        25 and 250 with a step of a brick's height plus 3:
+            Append a Brick to the self.bricks list. Remember to include
+            all necessary variables to initialize the brick properly.
+            
+    CHALLENGE:
+    Replace the nested for loops above with a list comprehension. To 
+    learn more about list comprehensions, investigate Python's official
+    website.
+    
+In the IntroScreen's update() method:
+    
+    Create a for loop to iterate through all the elements of the 
+    self.bricks list:
+        Call the update() method on the bricks. Do not forget to pass
+        delta_ms as an argument
+
+In the IntroScreen's render() method:
+    
+    Create a for loop to iterate through all the elements of the
+    self.bricks list:
+        Call the render() method on the bricks. You do not have to
+        worry about inactive bricks, as that check is performed in
+        the bricks themselves.

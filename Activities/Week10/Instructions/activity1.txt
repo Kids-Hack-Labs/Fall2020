@@ -1,0 +1,50 @@
+Kids Hack Labs - Senior - Fall 2020
+Activity 1
+
+Creating the Brick class
+
+A Brick is basically a glorified rect. It stores a rectangle's position,
+size, colour, and if that brick is active. Note that we are implementing
+the brick's surface as a static Surface-type variable. This is because 
+it is easier to recolor and reposition a single Surface than keep track 
+of multiple surfaces in the game. This is also where the active variable 
+comes in. It allows us to keep track of the destroyed bricks and control 
+rendering accordingly
+
+1. Copy Week 09's folder over to Week 10
+2. Navigate to the src folder
+3. Create a new Python file named brick.py
+
+Inside the file:
+4. Import pygame's Color, Rect, and Surface classes
+
+5. Create a Brick class
+    Create a static variable named surf. Assign None to it
+ 
+    Define a class initializer. This class should take an anchor, an 
+    extent, and a colour_ variables. OPTIONAL: anchor and extent are 
+    expected to be tuple variables, and their default value should be 
+    (0, 0). colour_ should be a default white or black pygame colour.
+    
+        Create a rect attribute and initialize it with the values passed
+        as anchor and extent
+        
+        Create a colour attribute and assign it the value passed in 
+        colour_
+        
+        Create an active attribute and assign True to it
+        
+        Initialize the Brick's Surf static variable to a Surface, using
+        the passed extent as a parameter
+        
+    Define an update method. Remember to pass delta_ms as an argument 
+    to it.
+        This function will be empty-bodied for now, so just pass it
+    
+    Define a render method:
+        if the rect is active:
+            import the Game class from the engine folder's game_env file
+            fill the Brick's surface with the brick's colour
+            Get the game's surface and blit the brick onto it. Remember
+            to use the Brick's surface and the rect attribute as 
+            parameters
