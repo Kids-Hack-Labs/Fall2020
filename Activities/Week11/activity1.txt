@@ -1,0 +1,58 @@
+Kids Hack Labs - Senior - Fall 2020
+Week 11
+Activity 1
+
+Implementing the Brick collision.
+
+Unlike ball-paddle collision, ball-brick collision has two extra
+conditions: Even though each collision is checked individually, all
+bricks must be checked "at the same time;" also, bricks should only have
+their collisions checked if they are active. To that end:
+
+NOTE: Brick and Ball position attributes will most often refer to their
+      rect attributes. The only exception is the ball's radius, which is
+      an independent attribute of the Ball class. Keep those things in
+      mind as you code.
+
+Open the intro_screen.py file
+
+At the end of the file, create a function named brick_bounce.
+    for every brick in the brick list:
+        if the brick is active:
+            create two variables, test_x and test_y, and assign them the
+            ball's rect's centerx and centery values, respectively
+            
+            if the ball's centerx is to the left of the brick's left:
+                assign the brick's left to the test_x variable
+            elif the ball's centerx is greater than the brick's right:
+                assign the brick's right to the test_x variable
+            
+            if the ball's centery is above the brick's top:
+                assign the brick's top to the test_y variable
+            elif the ball's centery is below the brick's bottom:
+                assign the brick's bottom to the test_y variable
+            
+            create two variables, named dist_x and dist_y, to store the
+            distance between the ball's center to the test variables.
+            Subtract the test variables from the ball's center 
+            attributes in both cases.
+            
+            multiply each distance variable by itself.
+            
+            create a distance variable, equal to the square root of the
+            sum of the dist_x and dist_y variables.
+            
+            if the distance is less than the ball's radius:
+                deactivate the brick
+                create an overlap variable and assign the clip between
+                the ball's and the brick's rectangles
+                
+                if the overlap's width is less than its height:
+                    flip the horizontal velocity
+                elif the overlap's width is greater than its height:
+                    flip the vertical velocity
+                otherwise:
+                    flip both velocities
+                    
+In the IntroScreen's update method:
+    call the brick_bounce() method.

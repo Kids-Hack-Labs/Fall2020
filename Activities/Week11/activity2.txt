@@ -1,0 +1,34 @@
+Kids Hack Labs - Senior - Fall 2020
+Week 11
+Activity 2
+
+Making changes to the game's start condition:
+
+Open the ball.py file
+
+In the Ball class's initializer:
+    Add a launched attribute, set it to False
+    
+
+In the Ball's update method:
+    Before moving the ball, check if it has been launched.
+    
+    NOTE: The movement code in the update function must now be indented
+          inside the if statement. This means that the ball should only 
+          move independently if it has already been launched.
+
+Open the intro_screen.py file
+
+In the IntroScreen class's update method:
+    **After updating the ball and the paddle**
+    if the ball is not launched:
+        position the ball so that the ball's centerx attribute is
+        the same as the paddle's centerx. The ball's bottom should be 
+        sitting on top of the paddle's top.
+        
+        from pygame's locals, import the K_SPACE name
+        from the engine's game_env module, import the Game class
+        
+        if the spacebar is pressed (use the Game.get_key(key) method
+        to check whether the key is pressed):
+            set the ball's launched attribute to True
