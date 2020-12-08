@@ -1,0 +1,47 @@
+Kids Hack Labs - Senior - Fall 2020
+Week 12
+Activity 1
+
+Implementing game end conditions:
+
+1. Copy the contents of Week11 folder into Week12
+2. Navigate to the src folder and open the intro_screen.py file
+
+In the IntroScreen class's initializer:
+
+    Create three attributes to track down the game's end, whether the
+    ball is out of the screen, and victory conditions. As they should 
+    be booleans, all of them need to be set to False at the beginning
+    of the game
+
+    Create two attributes to store background colours that will
+    indicate game win/loss to the player. Make sure that they are 
+    different from the background's "regular" colour.
+
+At the end of the intro_screen.py file:
+    Create a check_bricks() method.
+        Create a variable to track no bricks left. Set it to True
+        for each brick in the self.bricks attribute:
+            if the brick is active:
+                there are bricks left, so the tracking variable must be
+                set to False
+                As there is at least one brick left, there is no point
+                in contiuning the loop, so break out of it
+        return the tracking variable
+
+In the IntroScreen's bound_ball() method:
+    Change the LAST if statement to check whether the ball's top is 
+    below the screen's bottom:
+        set the "ball out" tracker variable to True
+
+In the IntroScreen's update() method:
+    Begin the method by setting the "game over" tracker to either a
+    check of the bricks or to the "ball out" tracker
+    if the game is over:
+        set the "game won" tracker to the brick check
+        as the game is over, the function should return at this point
+        
+In the IntroScreen's render() method:
+    if the game is over:
+        set the background colour to the adequate colour based on the
+        win condition
